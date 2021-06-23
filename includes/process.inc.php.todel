@@ -1,0 +1,24 @@
+<?php
+  include('Net/SSH2.php');
+  define('NET_SSH2_LOGGING', 2);
+
+  if (!isset($argv[1])) {
+    header("Location: ../index.php");
+    exit();
+  }
+
+  $studyFolder = $argv[1];
+
+  $ssh = new Net_SSH2('ghpcc06.umassrc.org');
+  if (!$ssh->login('kh45w', '202001@Guang')) {
+      exit('ERROR: SSH Login Failed');
+  } else {
+    echo "SSH connected!";
+    $hpcPrefix = "/home/kh45w/umw_mccb/Kai/hosts/webCRISPRseek/";
+    $cmdSubmit = "cd ".$hpcPrefix.$studyFolder."/script/ && source submit.sh &";
+    $ssh->exec($cmdSubmit);
+    $ssh->disconnect();
+    unset($ssh);
+  }
+
+ ?>

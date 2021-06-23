@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgba(0,0,0,0.2);
+  height: 3rem;
+  width: 60rem;
+  margin: auto;
+  line-height: 3rem;
+}
+header h2 {
+  padding-left: 2rem;
+}
+
+main {
+  /* position: relative; */
+  width: 60rem;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 10rem;
+  background: rgba(0,0,0,0.1);
+}
+
+#meta-info h3, #data-links h3 {
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
+
+.meta-info {
+  min-height: 3rem;
+  margin: 0.5rem;
+  margin-left: 4rem;
+}
+
+.meta-info input, .meta-info select {
+  width: 20rem;
+}
+
+#meta-info {
+  width: 56rem;
+  display: inline-block;
+  margin: 1rem 2rem 1rem 2rem;
+  min-height: 5rem;
+  background: rgba(0, 15, 150, 0.2);
+}
+
+#data-links {
+  width: 56rem;
+  display: inline-block;
+  margin: 0rem 2rem 1rem 2rem;
+  min-height: 5rem;
+  background: rgba(0, 15, 150, 0.2);
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  padding: 1rem;
+  padding-right: 0;
+}
+
+.th-batch {
+  width: 5%;
+}
+
+table input {
+  width: 100%;
+}
+
+table button {
+  display: block;
+  margin: auto;
+}
+
+
+#div-submit {
+  width: 56rem;
+  display: inline-block;
+  margin: 0rem 2rem 1rem 2rem;
+  min-height: 5rem;
+  background: rgba(0, 15, 150, 0.2);
+}
+
+#btn-submit {
+  padding: 0.3rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+footer {
+  height: 3rem;
+  width: 60rem;
+  margin: auto;
+  background: rgba(0,0,0,0.3);
+  line-height: 3rem;
+}
+footer h2 {
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
